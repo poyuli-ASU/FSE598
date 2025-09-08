@@ -1,0 +1,1203 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuantumComputing</name>
+    </assembly>
+    <members>
+        <member name="T:QuantumComputing.QuantumCircuits.CircuitExecution">
+            <summary>
+            This class is responsible for executing a quantum circuit
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.CircuitExecution.circuit">
+            <summary>
+            The circuit object that will be executed
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.CircuitExecution.executionColumns">
+            <summary>
+            The execution columns reprsent the gates that are executed in each time step.
+            </summary>
+        </member>
+        <member name="P:QuantumComputing.QuantumCircuits.CircuitExecution.QbitCount">
+            <summary>
+            Gets the qbit count.
+            </summary>
+            <value>
+            The qbit count.
+            </value>
+        </member>
+        <member name="P:QuantumComputing.QuantumCircuits.CircuitExecution.StateVector">
+            <summary>
+            Gets the state vector.
+            </summary>
+            <value>
+            The state vector.
+            </value>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.#ctor(QuantumComputing.QuantumCircuits.QuantumCircuitBuilder)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuantumComputing.QuantumCircuits.CircuitExecution"/> class.
+            </summary>
+            <param name="inputcircuit">The inputcircuit.</param>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.ExecuteCircuit">
+            <summary>
+            Executes the quantum circuit.
+            </summary>
+            <returns>The result statevector as a <see cref="T:QuantumComputing.LinearAlgebra.Vector" /></returns>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.BuildFullGateMatrix(QuantumComputing.LinearAlgebra.SparseMatrix,System.Int32)">
+            <summary>
+            Builds the full gate matrix. In order to build the matrix, it is necessary to tensor the gate matrix with the identity matrix for the unaffected qubits.
+            </summary>
+            <param name="gateMatrix">The gate operator matrix.</param>
+            <param name="targetQubits">The target qubits.</param>
+            <returns>A <see cref="T:QuantumComputing.LinearAlgebra.SparseMatrix"/> reprsentation of the tensored operator matrix.</returns>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.CNOTCreation(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a tensored CNOT operator matrix.
+            </summary>
+            <param name="gatesize">The size of the gate.</param>
+            <param name="controlbit">The control qubit.</param>
+            <param name="targetbit">The target qubit.</param>
+            <returns>A <see cref="T:QuantumComputing.LinearAlgebra.SparseMatrix"/> representation of the tensored CNOT operator matrix</returns>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.SwapCreation(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a tensored SWAP operator matrix.
+            </summary>
+            <param name="gatesize">The size of the gate.</param>
+            <param name="target1">The first target qubit.</param>
+            <param name="target2">The second target qubit.</param>
+            <returns>A <see cref="T:QuantumComputing.LinearAlgebra.SparseMatrix"/> representation of the tensored SWAP operator matrix</returns>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.ToffoliCreation(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a tensored Toffoli operator matrix.
+            </summary>
+            <param name="gatesize">The size of the gate.</param>
+            <param name="controlbit1">The first control qubit.</param>
+            <param name="controlbit2">The second control qubit.</param>
+            <param name="targetbit">The target qubit.</param>
+            <returns>A <see cref="T:QuantumComputing.LinearAlgebra.SparseMatrix"/> representation of the tensored Tofolli operator matrix</returns>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.MeasureAllQubits">
+            <summary>
+            Measures all qubits.
+            </summary>
+            <returns>An array of <see cref="T:System.Byte"/> of bits for the measured state.</returns>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.Normalize(System.Numerics.Complex[])">
+            <summary>
+            Normalizes the specified statevector.
+            </summary>
+            <param name="state">The statevector</param>
+            <returns>A normalized statevector as an array of <see cref="T:System.Numerics.Complex" /></returns>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.GetStateProbabilities">
+            <summary>
+            Calculates the probability distribution for the entire system.
+            </summary>
+            <returns>An array of doubles representing the probability of each basis state.</returns>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.GetBitstring(System.Int32)">
+            <summary>
+            Calculates the bitstring for a given index input.
+            </summary>
+            <param name="index">A number that we need to convert to a bitstring.</param>
+            <returns>A string representing the bitstring of the inputted index.</returns>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.SimulateMeasurements(System.Int32)">
+            <summary>
+            Simulates measurements on the entire quantum system.
+            </summary>
+            <param name="iterations">The number of simulations to perform.</param>
+            <returns>A list of bitstrings representing the measurement outcomes.</returns>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.PrintBitstrings(System.Int32)">
+            <summary>
+            Prints simulated measurement bitstring(s) to the console.
+            </summary>
+            <param name="iterations">The number of simulations to perform.</param>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.PrintHistogram(System.Int32)">
+            <summary>
+            Prints a sideways histogram based on the probabilities of each basis state alongside their respective probability.
+            </summary>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.SimulateHistogram(System.Int32,System.Int32)">
+            <summary>
+            Prints a sideways histogram of simulated measurement results, normalized to a specified number of bars.
+            </summary>
+            <param name="iterations">The number of simulations to perform.</param>
+            <param name="bars">The total number of hyphens to display in the histogram.</param>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.ValidateNotNull(System.Object,System.String)">
+            <summary>
+            Checks if the provided object is null.
+            </summary>
+            <param name="obj">The object we check.</param>
+            <param name="parameterName">The name of the parameter.</param>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.ValidateSizeMatch(System.Int32,System.Int32,System.String)">
+            <summary>
+            Checks if the sizes of two collections match.
+            </summary>
+            <param name="size1">Size of the first collection.</param>
+            <param name="size2">Size of the second collection.</param>
+            <param name="errorMessage">Custom error message to display if the sizes do not match.</param>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.GetGateMatrix(System.Char)">
+            <summary>
+            Gets the operator matrix for a given character.
+            </summary>
+            <param name="gateSymbol">The character representing the gate X, Y, Z and I are all that are supported.</param>
+            <returns>The SparseMatrix representing the operator matrix of the gate.</returns>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.GetExpectationValue(QuantumComputing.LinearAlgebra.SparseMatrix,System.Int32)">
+            <summary>
+            Calculates expectation value using inputted observable matrix and the statevector.
+            </summary>
+            <param name="observable">The observable matrix used to perform calculations.</param>
+            <param name="decimalPlaces">Optional parameter to control the number of decimal places it rounds to, if negative don't round.</param>
+            <returns>A double representing the calculated expectation value after observing with the observable.</returns>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.GetExpectationValue(System.String,System.Int32)">
+            <summary>
+            Calculates expectation value using inputted observable matrix string representation and the statevector.
+            </summary>
+            <param name="observable">A string consisting of a sequence of gates to represent the observable. Big-Endian for ease of use.</param>
+            <param name="decimalPlaces">Optional parameter to control the number of decimal places it rounds to, if negative don't round.</param>
+            <returns>A double representing the calculated expectation value after observing with the observable.</returns>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.GetExpectationValue(System.String[],System.Int32)">
+            <summary>
+            Calculates expectation values for each inputted observable string using the statevector and other overloaded functions.
+            </summary>
+            <param name="observables">A string array of observable matrix string representations.</param>
+            <param name="decimalPlaces">Optional parameter to control the number of decimal places it rounds to, if negative don't round.</param>
+            <returns>A list of doubles representing the expectation value for the corresponding observable.</returns>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.GetExpectationValue(System.Double[],System.String[],System.Int32)">
+            <summary>
+            Calculates the linear combination expectation value.
+            </summary>
+            <param name="coefficients">An array of coefficients corresponding to each observable.</param>
+            <param name="observables">An array of observable string representations.</param>
+            <param name="decimalPlaces">Optional parameter to control the number of decimal places it rounds to, if negative don't round.</param>
+            <returns>The expectation value of the linear combination.</returns>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.PrintExpectationValues(System.String[],System.Int32)">
+            <summary>
+            Prints the expectation values for an inputted array of observable string representations.
+            </summary>
+            <param name="observables">A string array of observable matrix string representations.</param>
+            <param name="decimalPlaces">Optional parameter to control the number of decimal places it rounds to, if negative don't round.</param>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CircuitExecution.ToString">
+            <summary>
+            Converts to string.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="T:QuantumComputing.QuantumCircuits.GateTypes">
+            <summary>
+            An <see cref="T:System.Enum"/> of the supported Gate Types
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.GateTypes.XGT">
+            <summary>
+            Not Gate
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.GateTypes.YGT">
+            <summary>
+            Y Gate
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.GateTypes.ZGT">
+            <summary>
+            Z Gate
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.GateTypes.TGT">
+            <summary>
+            T Gate
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.GateTypes.HGT">
+            <summary>
+            Hadamard Gate
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.GateTypes.CXT">
+            <summary>
+            Controlled Not Gate Target
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.GateTypes.CXC">
+            <summary>
+            Controlled Not Gate Control
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.GateTypes.SWP">
+            <summary>
+            Swap Gate target
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.GateTypes.SWT">
+            <summary>
+            Swap Gate target
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.GateTypes.TOF">
+            <summary>
+            Toffoli Gate
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.GateTypes.TOC">
+            <summary>
+            Toffoli Gate controls
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.GateTypes.RXT">
+            <summary>
+            Rx Gate
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.GateTypes.RYT">
+            <summary>
+            Ry Gate
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.GateTypes.RZT">
+            <summary>
+            Rz Gate
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.GateTypes.NOP">
+            <summary>
+            No operation gate used to fill gaps
+            </summary>
+        </member>
+        <member name="T:QuantumComputing.QuantumCircuits.Gate">
+            <summary>
+            Constuctor for a Quantum Gate
+            </summary>
+        </member>
+        <member name="P:QuantumComputing.QuantumCircuits.Gate.Type">
+            <summary>
+            The type of gate. See <see cref="T:QuantumComputing.QuantumCircuits.GateTypes"/>
+            </summary>
+        </member>
+        <member name="P:QuantumComputing.QuantumCircuits.Gate.Operation">
+            <summary>
+            The operator matrix of the gate
+            </summary>
+        </member>
+        <member name="P:QuantumComputing.QuantumCircuits.Gate.Controls">
+            <summary>
+            The control qubits
+            </summary>
+        </member>
+        <member name="P:QuantumComputing.QuantumCircuits.Gate.Targets">
+            <summary>
+            The target qubits
+            </summary>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.Gate.#ctor(QuantumComputing.QuantumCircuits.GateTypes,QuantumComputing.LinearAlgebra.SparseMatrix,System.Int32[],System.Int32[])">
+            <param name="type">The <see cref="T:QuantumComputing.QuantumCircuits.GateTypes"/> of the gate</param>
+            <param name="operation">A <see cref="T:QuantumComputing.LinearAlgebra.SparseMatrix"/> of the gate's operator matrix</param>
+            <param name="controls">The control qubits as an array of qubits (as indexes)</param>
+            <param name="targets">The target qubits as an array of qubits (as indexes)</param>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.Gate.ToString">
+            <summary>
+            Returns the <see cref="T:System.String"/> representation of the Gate
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:QuantumComputing.QuantumCircuits.NOP">
+            <summary>
+            Cosntructor for a NOP Gate
+            </summary>
+            <seealso cref="T:QuantumComputing.QuantumCircuits.Gate" />
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.NOP.#ctor(System.Int32,QuantumComputing.QuantumCircuits.GateTypes)">
+            <summary>
+            Constructs a NOP Gate which acts as an empty space
+            </summary>
+            <param name="target"></param>
+            <param name="type"></param>
+        </member>
+        <member name="T:QuantumComputing.QuantumCircuits.X">
+            <summary>
+            Constructor for an X Gate
+            </summary>
+            <seealso cref="T:QuantumComputing.QuantumCircuits.Gate" />
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.X.#ctor(System.Int32)">
+            <summary>
+            Constructs an X Gate
+            </summary>
+            <param name="target"></param>
+        </member>
+        <member name="T:QuantumComputing.QuantumCircuits.Y">
+            <summary>
+            Constructor for a Y Gate
+            </summary>
+            <seealso cref="T:QuantumComputing.QuantumCircuits.Gate" />
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.Y.#ctor(System.Int32)">
+            <summary>
+            Constructs a Y Gate
+            </summary>
+            <param name="target"></param>
+        </member>
+        <member name="T:QuantumComputing.QuantumCircuits.Z">
+            <summary>
+            Constructor for a Z Gate
+            </summary>
+            <seealso cref="T:QuantumComputing.QuantumCircuits.Gate" />
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.Z.#ctor(System.Int32)">
+            <summary>
+            Constructs an Z Gate
+            </summary>
+            <param name="target"></param>
+        </member>
+        <member name="T:QuantumComputing.QuantumCircuits.T">
+            <summary>
+            Constructor for a T Gate
+            </summary>
+            <seealso cref="T:QuantumComputing.QuantumCircuits.Gate" />
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.T.#ctor(System.Int32)">
+            <summary>
+            Constructs a T Gate
+            </summary>
+            <param name="target"></param>
+        </member>
+        <member name="T:QuantumComputing.QuantumCircuits.H">
+            <summary>
+            Constructor for a Hadamard Gate
+            </summary>
+            <seealso cref="T:QuantumComputing.QuantumCircuits.Gate" />
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.H.#ctor(System.Int32)">
+            <summary>
+            Constructs a Hadamard Gate
+            </summary>
+            <param name="target"></param>
+        </member>
+        <member name="T:QuantumComputing.QuantumCircuits.CX">
+            <summary>
+            Constructor for a Controlled Not (CX) Gate
+            </summary>
+            <seealso cref="T:QuantumComputing.QuantumCircuits.Gate" />
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.CX.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Constructs an Controlled Not (CX) Gate
+            </summary>
+            <param name="control"></param>
+            <param name="target"></param>
+        </member>
+        <member name="T:QuantumComputing.QuantumCircuits.SWAP">
+            <summary>
+            Contsructor for a SWAP Gate
+            </summary>
+            <seealso cref="T:QuantumComputing.QuantumCircuits.Gate" />
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.SWAP.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Constructs a SWAP Gate (SWP)
+            </summary>
+            <param name="target1"></param>
+            <param name="target2"></param>
+        </member>
+        <member name="T:QuantumComputing.QuantumCircuits.Toff">
+            <summary>
+            Constructor for a Toffoli Gate
+            </summary>
+            <seealso cref="T:QuantumComputing.QuantumCircuits.Gate" />
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.Toff.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Constructs a Toffoli Gate (Toff/TOF)
+            </summary>
+            <param name="control1"></param>
+            <param name="control2"></param>
+            <param name="target"></param>
+        </member>
+        <member name="T:QuantumComputing.QuantumCircuits.RX">
+            <summary>
+            Constructor for a Rotate X Gate
+            </summary>
+            <seealso cref="T:QuantumComputing.QuantumCircuits.Gate" />
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.RX.#ctor(System.Int32,System.Double)">
+            <summary>
+            Constructs a Rotate X Gate (RX)
+            </summary>
+            <param name="target"></param>
+            <param name="theta"></param>
+        </member>
+        <member name="T:QuantumComputing.QuantumCircuits.RY">
+            <summary>
+            Constructor for a Rotate Y Gate
+            </summary>
+            <seealso cref="T:QuantumComputing.QuantumCircuits.Gate" />
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.RY.#ctor(System.Int32,System.Double)">
+            <summary>
+            Constructs a Rotate Y Gate (RY)
+            </summary>
+            <param name="target"></param>
+            <param name="theta"></param>
+        </member>
+        <member name="T:QuantumComputing.QuantumCircuits.RZ">
+            <summary>
+            Constructor for a Rotate Z Gate
+            </summary>
+            <seealso cref="T:QuantumComputing.QuantumCircuits.Gate" />
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.RZ.#ctor(System.Int32,System.Double)">
+            <summary>
+            Constructs a Rotate Z Gate (RZ)
+            </summary>
+            <param name="target"></param>
+            <param name="theta"></param>
+        </member>
+        <member name="T:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder">
+            <summary>
+            This class is used to build a quantum circuit by adding gates to the circuit lines.
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.quantumLines">
+            <summary>
+            The quantum lines represent the series of quantum gates that are applied to a qubit.
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.classicalLines">
+            <summary>
+            The classical lines represent the series of classical gates that are applied to a classical bit.
+            </summary>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder"/> class.
+            </summary>
+            <param name="numQuantumLines">The number quantum lines.</param>
+            <param name="numClassicalLines">The number classical lines.</param>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.ValidateTarget(System.Int32,System.String)">
+            <summary>
+            Utility function to check for target being out of bounds.
+            </summary>
+            <param name="target">The target qubit.</param>
+            <param name="type">Optional parameter to specify the type of the qubit (control or target).</param>
+            <exception cref="T:System.ArgumentException">target outside of circuit bounds</exception>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.ValidateQubits(System.Int32[])">
+            <summary>
+            Utility function to check for qubit equality (each should be distinct).
+            </summary>
+            <param name="qubits">Array of input qubits to check equality for</param>
+            <exception cref="T:System.ArgumentException"> qubits not distinct</exception>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.AddGateX(System.Int32)">
+            <summary>
+            Adds the gate X.
+            </summary>
+            <param name="target">The target qubit</param>
+            <exception cref="T:System.ArgumentException">target outside of circuit bounds</exception>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.AddGateY(System.Int32)">
+            <summary>
+            Adds the gate Y.
+            </summary>
+            <param name="target">The target qubit</param>
+            <exception cref="T:System.ArgumentException">target outside of circuit bounds</exception>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.AddGateZ(System.Int32)">
+            <summary>
+            Adds the gate Z.
+            </summary>
+            <param name="target">The target qubit</param>
+            <exception cref="T:System.ArgumentException">target outside of circuit bounds</exception>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.AddGateT(System.Int32)">
+            <summary>
+            Adds the gate T.
+            </summary>
+            <param name="target">The target qubit</param>
+            <exception cref="T:System.ArgumentException">target outside of circuit bounds</exception>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.AddGateH(System.Int32)">
+            <summary>
+            Adds the gate H.
+            </summary>
+            <param name="target">The target qubit</param>
+            <exception cref="T:System.ArgumentException">target outside of circuit bounds</exception>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.AddGateCX(System.Int32,System.Int32)">
+            <summary>
+            Adds the gate CX (Controlled Not).
+            </summary>
+            <param name="control">The control qubit.</param>
+            <param name="target">The target qubit.</param>
+            <exception cref="T:System.ArgumentException">
+            target and control cannot be the same value
+            or
+            target or control outside of circuit bounds
+            </exception>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.AddGateSWP(System.Int32,System.Int32)">
+            <summary>
+            Adds the gate SWP.
+            </summary>
+            <param name="target1">The first target qubit.</param>
+            <param name="target2">The second target qubit.</param>
+            <exception cref="T:System.ArgumentException">
+            target and control cannot be the same value
+            or
+            target or control outside of circuit bounds
+            </exception>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.AddGateTOF(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Adds the gate TOF.
+            </summary>
+            <param name="control1">The first control qubit.</param>
+            <param name="control2">The second control qubit.</param>
+            <param name="target">The target qubit.</param>
+            <exception cref="T:System.ArgumentException">
+            target or controls can be the same value
+            or
+            target or control outside of circuit bounds
+            </exception>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.AddGateRX(System.Int32,System.Double)">
+            <summary>
+            Adds the gate RX.
+            </summary>
+            <param name="target">The target qubit</param>
+            <param name="theta">Angle of rotation in radians</param>
+            <exception cref="T:System.ArgumentException">target outside of circuit bounds</exception>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.AddGateRY(System.Int32,System.Double)">
+            <summary>
+            Adds the gate RY.
+            </summary>
+            <param name="target">The target qubit</param>
+            <param name="theta">Angle of rotation in radians</param>
+            <exception cref="T:System.ArgumentException">target outside of circuit bounds</exception>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.AddGateRZ(System.Int32,System.Double)">
+            <summary>
+            Adds the gate RZ.
+            </summary>
+            <param name="target">The target qubit</param>
+            <param name="theta">Angle of rotation in radians</param>
+            <exception cref="T:System.ArgumentException">target outside of circuit bounds</exception>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.ToString">
+            <summary>
+            Converts to string.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.GetBoxedAsciiSymbol(QuantumComputing.QuantumCircuits.Gate)">
+            <summary>
+            Helper method for circuit ToString. Makes an array of strings to represent a gate.
+            </summary>
+            <param name="gate">The <see cref="T:QuantumComputing.QuantumCircuits.Gate"/> to generate ASCII symbols for.</param>
+            <returns>
+            An array of <see cref="T:System.String"/> array representing the ASCII symbol of the gate.
+            </returns>
+        </member>
+        <member name="M:QuantumComputing.QuantumCircuits.QuantumCircuitBuilder.HasControlAboveOrBelow(System.Int32[],System.Int32,System.Boolean)">
+            <summary>
+            Checks if there is a control qubit above or below a target qubit.
+            </summary>
+            <param name="controls">Array of control qubit indices.</param>
+            <param name="target">The target qubit index.</param>
+            <param name="above">
+            <c>true</c> to check for controls above; <c>false</c> to check below.
+            </param>
+            <returns>
+            <c>true</c> if a control qubit is found in the specified direction; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:QuantumComputing.LinearAlgebra.Matrix">
+            <summary>
+            This class represents a matrix in linear algebra. A matrix is a two-dimensional array of complex numbers.
+            </summary>
+        </member>
+        <member name="P:QuantumComputing.LinearAlgebra.Matrix.rows">
+            <summary>
+            The number of rows 
+            </summary>
+        </member>
+        <member name="P:QuantumComputing.LinearAlgebra.Matrix.cols">
+            <summary>
+            The number of columns
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.LinearAlgebra.Matrix.elements">
+            <summary>
+            A <see cref="P:QuantumComputing.LinearAlgebra.Matrix.rows"/> x <see cref="P:QuantumComputing.LinearAlgebra.Matrix.cols"/> array of Complex numbers 
+            </summary>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.#ctor(System.Int32,System.Int32,System.Numerics.Complex[])">
+            <summary>
+            A constructor for a matrix
+            </summary>
+            <param name="rows"></param>
+            <param name="cols"></param>
+            <param name="elements"></param>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuantumComputing.LinearAlgebra.Matrix"/> class.
+            </summary>
+            <param name="rows">The number of rows.</param>
+            <param name="columns">The number of columns.</param>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.#ctor(System.Numerics.Complex[0:,0:])">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuantumComputing.LinearAlgebra.Matrix"/> class.
+            </summary>
+            <param name="elements">The elements of the Matrix.</param>
+            <exception cref="T:System.ArgumentNullException">elements</exception>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.#ctor(QuantumComputing.LinearAlgebra.Vector)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuantumComputing.LinearAlgebra.Matrix"/> class.
+            </summary>
+            <param name="elements">The elements as a <see cref="T:QuantumComputing.LinearAlgebra.Vector"/></param>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.GetRow(System.Int32)">
+            <summary>
+            Gets the row.
+            </summary>
+            <param name="rowNumber">The row index.</param>
+            <returns>A specific row of a Matrix as an arrray of <see cref="T:System.Numerics.Complex"/></returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">rowNumber - Row number is out of bounds.</exception>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.GetColumn(System.Int32)">
+            <summary>
+            Gets the column.
+            </summary>
+            <param name="columnNumber">The column index.</param>
+            <returns>A specific column of a Matrix as an array of <see cref="T:System.Numerics.Complex"/></returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">columnNumber - Column number is out of bounds.</exception>
+        </member>
+        <member name="P:QuantumComputing.LinearAlgebra.Matrix.Item(System.Int32,System.Int32)">
+            <summary>
+            Gets or sets the element with the specified <see cref="T:System.Numerics.Complex"/> number.
+            </summary>
+            <value>
+            The <see cref="T:System.Numerics.Complex"/>.
+            </value>
+            <param name="i">The row index.</param>
+            <param name="j">The column index.</param>
+            <returns>A <see cref="T:System.Numerics.Complex"/> element.</returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.Transpose">
+            <summary>
+            Transposes this instance.
+            </summary>
+            <returns>A transposed <see cref="T:QuantumComputing.LinearAlgebra.Matrix"/></returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.TransposeInPlace">
+            <summary>
+            Transposes the <see cref="T:QuantumComputing.LinearAlgebra.Matrix"/> in place. 
+            </summary>
+            <exception cref="T:System.InvalidOperationException">In-place transpose can only be performed on square matrices.</exception>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.Trace">
+            <summary>
+            Calculates the trace this instance.
+            </summary>
+            <returns>The trace of the Matrix as a <see cref="T:System.Numerics.Complex"/>.</returns>
+            <exception cref="T:System.InvalidOperationException">Trace is only defined for square matrices.</exception>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.Conjugate">
+            <summary>
+            Conjugates this instance.
+            </summary>
+            <returns>A conjugated <see cref="T:QuantumComputing.LinearAlgebra.Matrix"/></returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.ConjugateInPlace">
+            <summary>
+            Conjugates the <see cref="T:QuantumComputing.LinearAlgebra.Matrix"/> in place.
+            </summary>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.ToString">
+            <summary>
+            Converts to string.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.op_Addition(QuantumComputing.LinearAlgebra.Matrix,QuantumComputing.LinearAlgebra.Matrix)">
+            <summary>
+            Implements the operator op_Addition.
+            </summary>
+            <param name="matrix1">The first matrix.</param>
+            <param name="matrix2">The second matrix.</param>
+            <returns>
+            The result of the additon.
+            </returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.op_Subtraction(QuantumComputing.LinearAlgebra.Matrix,QuantumComputing.LinearAlgebra.Matrix)">
+            <summary>
+            Implements the operator op_Subtraction.
+            </summary>
+            <param name="matrix1">The first matrix.</param>
+            <param name="matrix2">The second matrix.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.op_Multiply(QuantumComputing.LinearAlgebra.Matrix,QuantumComputing.LinearAlgebra.Matrix)">
+            <summary>
+            Implements the operator op_Multiply.
+            </summary>
+            <param name="matrix1">The first matrix.</param>
+            <param name="matrix2">The second matrix.</param>
+            <returns>
+            The result of the subtraction.
+            </returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.op_Multiply(QuantumComputing.LinearAlgebra.Matrix,QuantumComputing.LinearAlgebra.Vector)">
+            <summary>
+            Implements the operator op_Multiply.
+            </summary>
+            <param name="matrix">The matrix.</param>
+            <param name="vector">The vector.</param>
+            <returns>
+            The result of the multiplication.
+            </returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.op_Multiply(QuantumComputing.LinearAlgebra.Matrix,System.Numerics.Complex)">
+            <summary>
+            Implements the operator op_Multiply.
+            </summary>
+            <param name="matrix">The matrix.</param>
+            <param name="scalar">The scalar.</param>
+            <returns>
+            The result of the multiplication.
+            </returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.op_Equality(QuantumComputing.LinearAlgebra.Matrix,QuantumComputing.LinearAlgebra.Matrix)">
+            <summary>
+            Implements the operator op_Equality.
+            </summary>
+            <param name="a">The first matrix.</param>
+            <param name="b">The second matrix.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.op_Inequality(QuantumComputing.LinearAlgebra.Matrix,QuantumComputing.LinearAlgebra.Matrix)">
+            <summary>
+            Implements the operator op_Inequality.
+            </summary>
+            <param name="a">The first matrix.</param>
+            <param name="b">The second matrix.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.Equals(System.Object)">
+            <summary>
+            Equalses the specified object.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.GetHashCode">
+            <summary>
+            Gets the hash code.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.AddInPlace(QuantumComputing.LinearAlgebra.Matrix)">
+            <summary>
+            Adds the Matrices in place.
+            </summary>
+            <param name="matrixOther">The matrix to add.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException">The dimensions of both matrices must match.</exception>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Matrix.SubtractInPlace(QuantumComputing.LinearAlgebra.Matrix)">
+            <summary>
+            Subtracts the Matrices in place.
+            </summary>
+            <param name="matrixOther">The other matrix.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException">The dimensions of both matrices must match.</exception>
+        </member>
+        <member name="T:QuantumComputing.LinearAlgebra.Idenity">
+            <summary>
+            This class represents an identity matrix in linear algebra. An identity matrix is a square matrix with ones on the main diagonal and zeros elsewhere.
+            </summary>
+            <seealso cref="T:QuantumComputing.LinearAlgebra.Matrix" />
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Idenity.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuantumComputing.LinearAlgebra.Idenity"/> class.
+            </summary>
+            <param name="size">The size of the matrix.</param>
+        </member>
+        <member name="T:QuantumComputing.LinearAlgebra.Operations">
+            <summary>
+            This class contains common linear algebra operations that can be performed on matrices and vectors.
+            </summary>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Operations.Add(QuantumComputing.LinearAlgebra.Matrix,QuantumComputing.LinearAlgebra.Matrix)">
+            <summary>
+            Adds the instance with the specified matrix.
+            </summary>
+            <param name="matrix1">The first matrix.</param>
+            <param name="matrix2">The second matrix.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException">The dimensions of both matrices must match.</exception>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Operations.Subtract(QuantumComputing.LinearAlgebra.Matrix,QuantumComputing.LinearAlgebra.Matrix)">
+            <summary>
+            Subtracts the specified matrix from the instance.
+            </summary>
+            <param name="matrix1">The first matrix.</param>
+            <param name="matrix2">The second matrix.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException">The dimensions of both matrices must match.</exception>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Operations.Multiply(QuantumComputing.LinearAlgebra.Matrix,QuantumComputing.LinearAlgebra.Matrix)">
+            <summary>
+            Multiplies the specified matrix with the instance. 
+            </summary>
+            <param name="matrix1">The first matrix.</param>
+            <param name="matrix2">The second matrix.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException">The number of columns in the first matrix must match the number of rows in the second matrix.</exception>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Operations.MatrixMultiply(QuantumComputing.LinearAlgebra.Matrix,QuantumComputing.LinearAlgebra.Matrix)">
+            <summary>
+            Multiplies the matrices concurrently.
+            </summary>
+            <param name="a">The first matrix.</param>
+            <param name="b">The second matrix.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException">The number of columns in the first matrix must match the number of rows in the second matrix.</exception>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Operations.MatrixVectorMult(QuantumComputing.LinearAlgebra.Matrix,QuantumComputing.LinearAlgebra.Vector)">
+            <summary>
+            Multiplies the matrix with the vector.
+            </summary>
+            <param name="matrix">The matrix.</param>
+            <param name="vector">The vector.</param>
+            <returns>A <see cref="T:QuantumComputing.LinearAlgebra.Vector"/></returns>
+            <exception cref="T:System.ArgumentException">Left Multiplications must have similar dimensions.</exception>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Operations.Multscaler(QuantumComputing.LinearAlgebra.Matrix,System.Numerics.Complex)">
+            <summary>
+            Multiplies a matrix with a scalar.
+            </summary>
+            <param name="matrix1">The matrix.</param>
+            <param name="scaler">The scaler.</param>
+            <returns></returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Operations.IsEqual(QuantumComputing.LinearAlgebra.Matrix,QuantumComputing.LinearAlgebra.Matrix)">
+            <summary>
+            Determines whether the specified a is equal.
+            </summary>
+            <param name="a">The first matrix.</param>
+            <param name="b">The second matrix.</param>
+            <returns>
+              <c>true</c> if the specified a is equal; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Operations.TensorProduct(QuantumComputing.LinearAlgebra.Matrix,QuantumComputing.LinearAlgebra.Matrix)">
+            <summary>
+            Tensors the product.
+            </summary>
+            <param name="matrix1">The matrix1.</param>
+            <param name="matrix2">The matrix2.</param>
+            <returns></returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Operations.TensorProductofVectors(QuantumComputing.LinearAlgebra.Vector,QuantumComputing.LinearAlgebra.Vector)">
+            <summary>
+            A method to tensor two <see cref="T:QuantumComputing.LinearAlgebra.Vector"/> together.
+            </summary>
+            <param name="vector1"></param>
+            <param name="vector2"></param>
+            <returns>A <see cref="T:QuantumComputing.LinearAlgebra.Vector"/>.</returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Operations.InnerProduct(QuantumComputing.LinearAlgebra.Vector,QuantumComputing.LinearAlgebra.Vector)">
+            <summary>
+            A method to perform the inner product (dot product) of two <see cref="T:QuantumComputing.LinearAlgebra.Vector"/>.
+            </summary>
+            <param name="vector1"></param>
+            <param name="vector2"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Operations.OuterProduct(QuantumComputing.LinearAlgebra.Vector,QuantumComputing.LinearAlgebra.Vector)">
+            <summary>
+            A method to perform the outer product (cross product) of two <see cref="T:QuantumComputing.LinearAlgebra.Vector"/>.
+            </summary>
+            <param name="vector1"></param>
+            <param name="vector2"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Operations.EuclideanNorm(QuantumComputing.LinearAlgebra.Vector)">
+            <summary>
+            A method to calculate the Euclidean norm of a <see cref="T:QuantumComputing.LinearAlgebra.Vector"/>.
+            
+            The Euclidean norm refers to the squart root of the sum of the squares of the elements of the <see cref="T:QuantumComputing.LinearAlgebra.Vector"/>.
+            </summary>
+            <param name="vector"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Operations.EuclideanNormAsComplex(QuantumComputing.LinearAlgebra.Vector)">
+            <summary>
+            A method to calculate the Euclidean norm of a <see cref="T:QuantumComputing.LinearAlgebra.Vector"/> as a <see cref="T:System.Numerics.Complex"/>
+            </summary>
+            <param name="vector"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Operations.Determinant(QuantumComputing.LinearAlgebra.Matrix)">
+            <summary>
+            Calculate determinant of a <see cref="T:QuantumComputing.LinearAlgebra.Matrix"/>
+            </summary>
+            <param name="matrix"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Operations.GenerateIdentityMatrix(System.Int32)">
+            <summary>
+            Return a <see cref="T:QuantumComputing.LinearAlgebra.Matrix"/> with all ones along the diaganol
+            </summary>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Operations.Invert(QuantumComputing.LinearAlgebra.Matrix)">
+            <summary>
+            A method to convert the inverse of a <see cref="T:QuantumComputing.LinearAlgebra.Matrix"/>.
+            </summary>
+            <param name="matrix"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Operations.JoinMatrices(QuantumComputing.LinearAlgebra.Matrix,QuantumComputing.LinearAlgebra.Matrix)">
+            <summary>
+            A method for joining two <see cref="T:QuantumComputing.LinearAlgebra.Matrix"/>.
+            </summary>
+            <param name="matrix1"></param>
+            <param name="matrix2"></param>
+            <returns></returns>
+        </member>
+        <member name="T:QuantumComputing.LinearAlgebra.Vector">
+            <summary>
+            This class represents a vector in linear algebra. A vector is a one-dimensional array of complex numbers.
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.LinearAlgebra.Vector.rows">
+            <summary>
+            The number of rows in the vector.
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.LinearAlgebra.Vector.cols">
+            <summary>
+            The number of columns in the vector.
+            </summary>
+        </member>
+        <member name="F:QuantumComputing.LinearAlgebra.Vector.elements">
+            <summary>
+            The elements of the vector.
+            </summary>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Vector.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuantumComputing.LinearAlgebra.Vector"/> class.
+            </summary>
+            <param name="rows">The number of rows (or number of elements) in the vector.</param>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Vector.#ctor(System.Numerics.Complex[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuantumComputing.LinearAlgebra.Vector"/> class.
+            </summary>
+            <param name="elements">The elements of the Vector.</param>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Vector.Conjugate">
+            <summary>
+            Conjugates this <see cref="T:QuantumComputing.LinearAlgebra.Vector"/> instance.
+            </summary>
+            <returns>A conjugated <see cref="T:QuantumComputing.LinearAlgebra.Vector"/></returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Vector.ConjugateInPlace">
+            <summary>
+            Conjugates the <see cref="T:QuantumComputing.LinearAlgebra.Vector"/> in place. This method modifies the original <see cref="T:QuantumComputing.LinearAlgebra.Vector"/>.
+            </summary>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Vector.IsRowVector">
+            <summary>
+            Determines whether [is row vector].
+            </summary>
+            <returns>
+              <c>true</c> if [is row vector]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Vector.IsColVector">
+            <summary>
+            Determines whether [is col vector].
+            </summary>
+            <returns>
+              <c>true</c> if [is col vector]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Vector.Transpose(QuantumComputing.LinearAlgebra.Vector)">
+            <summary>
+            Transposes the specified vector.
+            </summary>
+            <param name="vector">The vector.</param>
+            <returns>A transposed <see cref="T:QuantumComputing.LinearAlgebra.Vector"/></returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Vector.TransposeInPlace">
+            <summary>
+            Transposes the <see cref="T:QuantumComputing.LinearAlgebra.Vector"/> in place. This method modifies the original <see cref="T:QuantumComputing.LinearAlgebra.Vector"/>.
+            </summary>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Vector.IsApproximatelyEqual(QuantumComputing.LinearAlgebra.Vector,System.Double)">
+            <summary>
+            Determines whether [is approximately equal] [the specified other].
+            </summary>
+            <param name="other">The other <see cref="T:QuantumComputing.LinearAlgebra.Vector"/>.</param>
+            <param name="tolerance">The tolerance. Default tolerance is 1e-10</param>
+            <returns>
+              <c>true</c> if [is approximately equal] [the specified other]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="P:QuantumComputing.LinearAlgebra.Vector.ToMatrix">
+            <summary>
+            Converts to matrix.
+            </summary>
+            <value>
+            To <see cref="T:QuantumComputing.LinearAlgebra.Matrix"/>.
+            </value>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Vector.GetState">
+            <summary>
+            Gets the state of the <see cref="T:QuantumComputing.LinearAlgebra.Vector"/>.
+            </summary>
+            <returns>An array of <see cref="T:System.Numerics.Complex"/> of the elements.</returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.Vector.ToString">
+            <summary>
+            Converts to string.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="T:QuantumComputing.LinearAlgebra.SparseMatrix">
+            <summary>
+            A special representation of a <see cref="T:QuantumComputing.LinearAlgebra.Matrix"/>. A SparseMatrix stores only the non-zero elements to conserve memory and computation.
+            </summary>
+        </member>
+        <member name="P:QuantumComputing.LinearAlgebra.SparseMatrix.Rows">
+            <summary>
+            The number of rows
+            </summary>
+        </member>
+        <member name="P:QuantumComputing.LinearAlgebra.SparseMatrix.Cols">
+            <summary>
+            The number of columns
+            </summary>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.SparseMatrix.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Constructor to initialize a sparse matrix of a given size
+            </summary>
+            <param name="rows"></param>
+            <param name="cols"></param>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.SparseMatrix.#ctor(System.Numerics.Complex[0:,0:])">
+            <summary>
+            Constructor to initialize a sparse matrix of a given <see cref="T:QuantumComputing.LinearAlgebra.Matrix"/>
+            </summary>
+            <param name="matrix"></param>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.SparseMatrix.FromMatrix(QuantumComputing.LinearAlgebra.Matrix)">
+            <summary>
+            A static method to convert a <see cref="T:QuantumComputing.LinearAlgebra.Matrix"/> to a <see cref="T:QuantumComputing.LinearAlgebra.SparseMatrix"/>
+            </summary>
+            <param name="matrix"></param>
+            <returns></returns>
+        </member>
+        <member name="P:QuantumComputing.LinearAlgebra.SparseMatrix.Item(System.Int32,System.Int32)">
+            <summary>
+            Index the element at row x col
+            </summary>
+            <param name="row"></param>
+            <param name="col"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.SparseMatrix.Multiply(QuantumComputing.LinearAlgebra.SparseMatrix)">
+            <summary>
+            A method to peform the matrix multiplication between two <see cref="T:QuantumComputing.LinearAlgebra.SparseMatrix"/>. Note that this is a right multiplicaiton, so it computes self * other
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.SparseMatrix.TensorProduct(QuantumComputing.LinearAlgebra.SparseMatrix)">
+            <summary>
+            A methdo to perform the tensor product with another <see cref="T:QuantumComputing.LinearAlgebra.SparseMatrix"/>
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.SparseMatrix.ParallelTensorProduct(QuantumComputing.LinearAlgebra.SparseMatrix)">
+            <summary>
+            A method to perform the tensor product with another <see cref="T:QuantumComputing.LinearAlgebra.SparseMatrix"/> that is parallelized to increase performance on large matrices.
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+            <exception cref="T:System.NullReferenceException"></exception>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.SparseMatrix.MultiplyWithVector(System.Numerics.Complex[])">
+            <summary>
+            A method to perform a SparseMatrix * <see cref="T:QuantumComputing.LinearAlgebra.Vector"/> multiplication
+            </summary>
+            <param name="vector"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.SparseMatrix.Print">
+            <summary>
+            Method to display the sparse matrix (for debugging purposes)
+            </summary>
+        </member>
+        <member name="M:QuantumComputing.LinearAlgebra.SparseMatrix.Identity(System.Int32)">
+            <summary>
+            Return the identity matrix as a SparseMatrix
+            </summary>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

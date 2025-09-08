@@ -1,0 +1,2921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Program xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="/ StateFileSchema.xsd" VIPLE_Type="1">
+  <Version>4.1.0.0</Version>
+  <ProgrammingPanel Name="Main">
+    <Variables />
+    <Activity IsFlipped="false">
+      <ActivityNameInt>19</ActivityNameInt>
+      <ActivityID>0</ActivityID>
+      <PreviousActivities />
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>19</Left>
+        <Top>18.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">localhost</Value>
+        <Value Index="1">3001</Value>
+        <Value Index="2">TORCS</Value>
+        <Value Index="3">3000</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>46</ActivityNameInt>
+      <ActivityID>1</ActivityID>
+      <PreviousActivities />
+      <NextActivities>
+        <ActivityID>2</ActivityID>
+        <ActivityID>4</ActivityID>
+        <ActivityID>5</ActivityID>
+        <ActivityID>6</ActivityID>
+        <ActivityID>7</ActivityID>
+        <ActivityID>8</ActivityID>
+        <ActivityID>9</ActivityID>
+        <ActivityID>35</ActivityID>
+        <ActivityID>31</ActivityID>
+        <ActivityID>27</ActivityID>
+        <ActivityID>54</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines>
+        <GraphEdgeID>0</GraphEdgeID>
+        <GraphEdgeID>1</GraphEdgeID>
+        <GraphEdgeID>2</GraphEdgeID>
+        <GraphEdgeID>3</GraphEdgeID>
+        <GraphEdgeID>4</GraphEdgeID>
+        <GraphEdgeID>5</GraphEdgeID>
+        <GraphEdgeID>6</GraphEdgeID>
+        <GraphEdgeID>7</GraphEdgeID>
+        <GraphEdgeID>8</GraphEdgeID>
+        <GraphEdgeID>9</GraphEdgeID>
+        <GraphEdgeID>10</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>17</Left>
+        <Top>127.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">Robot/IoT Controller 0</Value>
+        <Value Index="1">-1</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>2</ActivityID>
+      <PreviousActivities>
+        <ActivityID>1</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>3</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>0</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>11</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>214</Left>
+        <Top>5.52</Top>
+      </Location>
+      <Values>
+        <Value>track[9]</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>4</ActivityNameInt>
+      <ActivityID>3</ActivityID>
+      <PreviousActivities Index="0">
+        <ActivityID>2</ActivityID>
+      </PreviousActivities>
+      <PreviousActivities Index="1">
+        <ActivityID>31</ActivityID>
+      </PreviousActivities>
+      <PreviousActivities Index="2">
+        <ActivityID>35</ActivityID>
+      </PreviousActivities>
+      <PreviousActivities Index="3">
+        <ActivityID>54</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>39</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines Index="0">
+        <GraphEdgeID>11</GraphEdgeID>
+      </IncomingLines>
+      <IncomingLines Index="1">
+        <GraphEdgeID>12</GraphEdgeID>
+      </IncomingLines>
+      <IncomingLines Index="2">
+        <GraphEdgeID>13</GraphEdgeID>
+      </IncomingLines>
+      <IncomingLines Index="3">
+        <GraphEdgeID>14</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>15</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>501</Left>
+        <Top>4.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">track9</Value>
+        <Value Index="1">steering</Value>
+        <Value Index="2">brake</Value>
+        <Value Index="3">curLapTime</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>3</ActivityNameInt>
+      <ActivityID>4</ActivityID>
+      <PreviousActivities>
+        <ActivityID>1</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>52</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>1</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>16</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>214</Left>
+        <Top>99.52</Top>
+      </Location>
+      <Values>
+        <Value>0</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>5</ActivityID>
+      <PreviousActivities>
+        <ActivityID>1</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>10</ActivityID>
+        <ActivityID>51</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>2</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>17</GraphEdgeID>
+        <GraphEdgeID>18</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>13</Left>
+        <Top>369.52</Top>
+      </Location>
+      <Values>
+        <Value>wheelSpinVel[0]</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>6</ActivityID>
+      <PreviousActivities>
+        <ActivityID>1</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>10</ActivityID>
+        <ActivityID>51</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>3</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>19</GraphEdgeID>
+        <GraphEdgeID>20</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>14</Left>
+        <Top>452.52</Top>
+      </Location>
+      <Values>
+        <Value>wheelSpinVel[1]</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>7</ActivityID>
+      <PreviousActivities>
+        <ActivityID>1</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>10</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>4</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>21</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>13</Left>
+        <Top>534.52</Top>
+      </Location>
+      <Values>
+        <Value>wheelSpinVel[2]</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>8</ActivityID>
+      <PreviousActivities>
+        <ActivityID>1</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>10</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>5</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>22</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>13</Left>
+        <Top>619.52</Top>
+      </Location>
+      <Values>
+        <Value>wheelSpinVel[3]</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>9</ActivityID>
+      <PreviousActivities>
+        <ActivityID>1</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>10</ActivityID>
+        <ActivityID>51</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>6</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>23</GraphEdgeID>
+        <GraphEdgeID>24</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>13</Left>
+        <Top>702.52</Top>
+      </Location>
+      <Values>
+        <Value>speedX</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>4</ActivityNameInt>
+      <ActivityID>10</ActivityID>
+      <PreviousActivities Index="0">
+        <ActivityID>35</ActivityID>
+      </PreviousActivities>
+      <PreviousActivities Index="1">
+        <ActivityID>5</ActivityID>
+      </PreviousActivities>
+      <PreviousActivities Index="2">
+        <ActivityID>6</ActivityID>
+      </PreviousActivities>
+      <PreviousActivities Index="3">
+        <ActivityID>7</ActivityID>
+      </PreviousActivities>
+      <PreviousActivities Index="4">
+        <ActivityID>8</ActivityID>
+      </PreviousActivities>
+      <PreviousActivities Index="5">
+        <ActivityID>9</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>43</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines Index="0">
+        <GraphEdgeID>25</GraphEdgeID>
+      </IncomingLines>
+      <IncomingLines Index="1">
+        <GraphEdgeID>17</GraphEdgeID>
+      </IncomingLines>
+      <IncomingLines Index="2">
+        <GraphEdgeID>19</GraphEdgeID>
+      </IncomingLines>
+      <IncomingLines Index="3">
+        <GraphEdgeID>21</GraphEdgeID>
+      </IncomingLines>
+      <IncomingLines Index="4">
+        <GraphEdgeID>22</GraphEdgeID>
+      </IncomingLines>
+      <IncomingLines Index="5">
+        <GraphEdgeID>23</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>26</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>413</Left>
+        <Top>437.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">Brake</Value>
+        <Value Index="1">wv0</Value>
+        <Value Index="2">wv1</Value>
+        <Value Index="3">wv2</Value>
+        <Value Index="4">wv3</Value>
+        <Value Index="5">speedX</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>3</ActivityNameInt>
+      <ActivityID>11</ActivityID>
+      <PreviousActivities />
+      <NextActivities>
+        <ActivityID>12</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines>
+        <GraphEdgeID>27</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>1037</Left>
+        <Top>105.52</Top>
+      </Location>
+      <Values>
+        <Value>0.33</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>1</ActivityNameInt>
+      <ActivityID>12</ActivityID>
+      <PreviousActivities>
+        <ActivityID>11</ActivityID>
+      </PreviousActivities>
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>27</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>1176</Left>
+        <Top>119.52</Top>
+      </Location>
+      <Values>
+        <Value>FWRad</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>3</ActivityNameInt>
+      <ActivityID>13</ActivityID>
+      <PreviousActivities />
+      <NextActivities>
+        <ActivityID>14</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines>
+        <GraphEdgeID>28</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>1038</Left>
+        <Top>200.52</Top>
+      </Location>
+      <Values>
+        <Value>0.32</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>1</ActivityNameInt>
+      <ActivityID>14</ActivityID>
+      <PreviousActivities>
+        <ActivityID>13</ActivityID>
+      </PreviousActivities>
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>28</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>1176</Left>
+        <Top>200.52</Top>
+      </Location>
+      <Values>
+        <Value>RWRad</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>3</ActivityNameInt>
+      <ActivityID>15</ActivityID>
+      <PreviousActivities />
+      <NextActivities>
+        <ActivityID>16</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines>
+        <GraphEdgeID>29</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>1039</Left>
+        <Top>282.52</Top>
+      </Location>
+      <Values>
+        <Value>120.0</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>1</ActivityNameInt>
+      <ActivityID>16</ActivityID>
+      <PreviousActivities>
+        <ActivityID>15</ActivityID>
+      </PreviousActivities>
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>29</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>1176</Left>
+        <Top>282.52</Top>
+      </Location>
+      <Values>
+        <Value>ABS_MinSpeed</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>3</ActivityNameInt>
+      <ActivityID>17</ActivityID>
+      <PreviousActivities />
+      <NextActivities>
+        <ActivityID>18</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines>
+        <GraphEdgeID>30</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>1038</Left>
+        <Top>363.52</Top>
+      </Location>
+      <Values>
+        <Value>0.9</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>1</ActivityNameInt>
+      <ActivityID>18</ActivityID>
+      <PreviousActivities>
+        <ActivityID>17</ActivityID>
+      </PreviousActivities>
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>30</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>1176</Left>
+        <Top>363.52</Top>
+      </Location>
+      <Values>
+        <Value>ABS_Slip</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>3</ActivityNameInt>
+      <ActivityID>19</ActivityID>
+      <PreviousActivities />
+      <NextActivities>
+        <ActivityID>20</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines>
+        <GraphEdgeID>31</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>1039</Left>
+        <Top>447.52</Top>
+      </Location>
+      <Values>
+        <Value>120.0</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>1</ActivityNameInt>
+      <ActivityID>20</ActivityID>
+      <PreviousActivities>
+        <ActivityID>19</ActivityID>
+      </PreviousActivities>
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>31</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>1176</Left>
+        <Top>447.52</Top>
+      </Location>
+      <Values>
+        <Value>TLC_MinSpeed</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>3</ActivityNameInt>
+      <ActivityID>21</ActivityID>
+      <PreviousActivities />
+      <NextActivities>
+        <ActivityID>22</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines>
+        <GraphEdgeID>32</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>1038</Left>
+        <Top>528.52</Top>
+      </Location>
+      <Values>
+        <Value>0.9</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>1</ActivityNameInt>
+      <ActivityID>22</ActivityID>
+      <PreviousActivities>
+        <ActivityID>21</ActivityID>
+      </PreviousActivities>
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>32</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>1176</Left>
+        <Top>528.52</Top>
+      </Location>
+      <Values>
+        <Value>TLC_Slip</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>3</ActivityNameInt>
+      <ActivityID>23</ActivityID>
+      <PreviousActivities />
+      <NextActivities>
+        <ActivityID>24</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines>
+        <GraphEdgeID>33</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>1039</Left>
+        <Top>610.52</Top>
+      </Location>
+      <Values>
+        <Value>false</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>1</ActivityNameInt>
+      <ActivityID>24</ActivityID>
+      <PreviousActivities>
+        <ActivityID>23</ActivityID>
+      </PreviousActivities>
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>33</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>1176</Left>
+        <Top>610.52</Top>
+      </Location>
+      <Values>
+        <Value>clutchtime</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>3</ActivityNameInt>
+      <ActivityID>25</ActivityID>
+      <PreviousActivities />
+      <NextActivities>
+        <ActivityID>26</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines>
+        <GraphEdgeID>34</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>1038</Left>
+        <Top>691.52</Top>
+      </Location>
+      <Values>
+        <Value>0</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>1</ActivityNameInt>
+      <ActivityID>26</ActivityID>
+      <PreviousActivities>
+        <ActivityID>25</ActivityID>
+      </PreviousActivities>
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>34</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>1176</Left>
+        <Top>691.52</Top>
+      </Location>
+      <Values>
+        <Value>gear</Value>
+      </Values>
+    </Activity>
+    <Activity Name="Shifter" IsFlipped="false">
+      <ActivityNameInt>0</ActivityNameInt>
+      <ActivityID>27</ActivityID>
+      <PreviousActivities>
+        <ActivityID>1</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>52</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>9</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>35</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>217</Left>
+        <Top>355.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">speedX</Value>
+        <Value Index="1">speedX</Value>
+      </Values>
+    </Activity>
+    <Activity Name="Steering" IsFlipped="false">
+      <ActivityNameInt>0</ActivityNameInt>
+      <ActivityID>31</ActivityID>
+      <PreviousActivities>
+        <ActivityID>1</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>3</ActivityID>
+        <ActivityID>52</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>8</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>12</GraphEdgeID>
+        <GraphEdgeID>36</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>215</Left>
+        <Top>190.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">angle</Value>
+        <Value Index="1">angle</Value>
+        <Value Index="2">trackPos</Value>
+        <Value Index="3">trackPos</Value>
+      </Values>
+    </Activity>
+    <Activity Name="Brake" IsFlipped="false">
+      <ActivityNameInt>0</ActivityNameInt>
+      <ActivityID>35</ActivityID>
+      <PreviousActivities>
+        <ActivityID>1</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>10</ActivityID>
+        <ActivityID>3</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>7</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>25</GraphEdgeID>
+        <GraphEdgeID>13</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>216</Left>
+        <Top>270.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">angle</Value>
+        <Value Index="1">angle</Value>
+        <Value Index="2">trackPos</Value>
+        <Value Index="3">trackPos</Value>
+        <Value Index="4">speedX</Value>
+        <Value Index="5">speedX</Value>
+      </Values>
+    </Activity>
+    <Activity Name="Accel" IsFlipped="false">
+      <ActivityNameInt>0</ActivityNameInt>
+      <ActivityID>39</ActivityID>
+      <PreviousActivities>
+        <ActivityID>3</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>51</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>15</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>37</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>645</Left>
+        <Top>13.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">curLapTime</Value>
+        <Value Index="1">curLapTime</Value>
+        <Value Index="2">steering</Value>
+        <Value Index="3">steering</Value>
+        <Value Index="4">track9</Value>
+        <Value Index="5">track9</Value>
+        <Value Index="6">brake</Value>
+        <Value Index="7">brake</Value>
+      </Values>
+    </Activity>
+    <Activity Name="ABS" IsFlipped="false">
+      <ActivityNameInt>0</ActivityNameInt>
+      <ActivityID>43</ActivityID>
+      <PreviousActivities>
+        <ActivityID>10</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>52</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>26</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>38</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>565</Left>
+        <Top>511.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">speedX</Value>
+        <Value Index="1">speedX</Value>
+        <Value Index="2">ABS_MinSpeed</Value>
+        <Value Index="3">state.ABS_MinSpeed</Value>
+        <Value Index="4">brake</Value>
+        <Value Index="5">Brake</Value>
+        <Value Index="6">wheelVel1</Value>
+        <Value Index="7">wv0</Value>
+        <Value Index="8">wheelVel2</Value>
+        <Value Index="9">wv1</Value>
+        <Value Index="10">wheelVel3</Value>
+        <Value Index="11">wv2</Value>
+        <Value Index="12">wheelVel4</Value>
+        <Value Index="13">wv3</Value>
+      </Values>
+    </Activity>
+    <Activity Name="TC" IsFlipped="false">
+      <ActivityNameInt>0</ActivityNameInt>
+      <ActivityID>47</ActivityID>
+      <PreviousActivities>
+        <ActivityID>51</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>52</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>39</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>40</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>744</Left>
+        <Top>208.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">speedX</Value>
+        <Value Index="1">speedX</Value>
+        <Value Index="2">accel</Value>
+        <Value Index="3">accel</Value>
+        <Value Index="4">wheelSpin2</Value>
+        <Value Index="5">wv0</Value>
+        <Value Index="6">wheelSpin3</Value>
+        <Value Index="7">wv1</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>4</ActivityNameInt>
+      <ActivityID>51</ActivityID>
+      <PreviousActivities Index="0">
+        <ActivityID>39</ActivityID>
+      </PreviousActivities>
+      <PreviousActivities Index="1">
+        <ActivityID>9</ActivityID>
+      </PreviousActivities>
+      <PreviousActivities Index="2">
+        <ActivityID>5</ActivityID>
+      </PreviousActivities>
+      <PreviousActivities Index="3">
+        <ActivityID>6</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>47</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines Index="0">
+        <GraphEdgeID>37</GraphEdgeID>
+      </IncomingLines>
+      <IncomingLines Index="1">
+        <GraphEdgeID>24</GraphEdgeID>
+      </IncomingLines>
+      <IncomingLines Index="2">
+        <GraphEdgeID>18</GraphEdgeID>
+      </IncomingLines>
+      <IncomingLines Index="3">
+        <GraphEdgeID>20</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>39</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>799</Left>
+        <Top>13.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">accel</Value>
+        <Value Index="1">speedX</Value>
+        <Value Index="2">wv0</Value>
+        <Value Index="3">wv1</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>4</ActivityNameInt>
+      <ActivityID>52</ActivityID>
+      <PreviousActivities Index="0">
+        <ActivityID>47</ActivityID>
+      </PreviousActivities>
+      <PreviousActivities Index="1">
+        <ActivityID>43</ActivityID>
+      </PreviousActivities>
+      <PreviousActivities Index="2">
+        <ActivityID>27</ActivityID>
+      </PreviousActivities>
+      <PreviousActivities Index="3">
+        <ActivityID>31</ActivityID>
+      </PreviousActivities>
+      <PreviousActivities Index="4">
+        <ActivityID>4</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>53</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines Index="0">
+        <GraphEdgeID>40</GraphEdgeID>
+      </IncomingLines>
+      <IncomingLines Index="1">
+        <GraphEdgeID>38</GraphEdgeID>
+      </IncomingLines>
+      <IncomingLines Index="2">
+        <GraphEdgeID>35</GraphEdgeID>
+      </IncomingLines>
+      <IncomingLines Index="3">
+        <GraphEdgeID>36</GraphEdgeID>
+      </IncomingLines>
+      <IncomingLines Index="4">
+        <GraphEdgeID>16</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>41</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>749</Left>
+        <Top>341.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">Accel</Value>
+        <Value Index="1">Brake</Value>
+        <Value Index="2">Gear</Value>
+        <Value Index="3">Steer</Value>
+        <Value Index="4">Clutch</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>47</ActivityNameInt>
+      <ActivityID>53</ActivityID>
+      <PreviousActivities>
+        <ActivityID>52</ActivityID>
+      </PreviousActivities>
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>41</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>754</Left>
+        <Top>580.26</Top>
+      </Location>
+      <Values>
+        <Value Index="0">Robot/IoT Controller 0</Value>
+        <Value Index="1">Accel</Value>
+        <Value Index="2">Brake</Value>
+        <Value Index="3">Gear</Value>
+        <Value Index="4">Steer</Value>
+        <Value Index="5">Clutch</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>54</ActivityID>
+      <PreviousActivities>
+        <ActivityID>1</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>3</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>10</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>14</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>344</Left>
+        <Top>58.26</Top>
+      </Location>
+      <Values>
+        <Value>curLapTime</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>11</ActivityNameInt>
+      <ActivityID>93</ActivityID>
+      <PreviousActivities />
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>1041</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value>Declear variables</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>11</ActivityNameInt>
+      <ActivityID>102</ActivityID>
+      <PreviousActivities />
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>326</Left>
+        <Top>700.52</Top>
+      </Location>
+      <Values>
+        <Value>1. Getting the wheels' spinning velocities
+2. Getting current speed
+3. Decide the steer, brake, gear, accel
+4. Tune the brake with ABS, accel with TC</Value>
+      </Values>
+    </Activity>
+  </ProgrammingPanel>
+  <ProgrammingPanel Name="Shifter">
+    <Variables>
+      <Variable>
+        <VariableName>speedX</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+    </Variables>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>-1</ActivityNameInt>
+      <ActivityID>28</ActivityID>
+      <PreviousActivities />
+      <NextActivities>
+        <ActivityID>55</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines>
+        <GraphEdgeID>42</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>0</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value></Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>-2</ActivityNameInt>
+      <ActivityID>29</ActivityID>
+      <PreviousActivities>
+        <ActivityID>61</ActivityID>
+      </PreviousActivities>
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>43</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>0</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value></Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>-3</ActivityNameInt>
+      <ActivityID>30</ActivityID>
+      <PreviousActivities />
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>0</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value></Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>6</ActivityNameInt>
+      <ActivityID>55</ActivityID>
+      <PreviousActivities>
+        <ActivityID>28</ActivityID>
+      </PreviousActivities>
+      <NextActivities Index="0">
+        <ActivityID>56</ActivityID>
+      </NextActivities>
+      <NextActivities Index="1">
+        <ActivityID>57</ActivityID>
+      </NextActivities>
+      <NextActivities Index="2">
+        <ActivityID>59</ActivityID>
+      </NextActivities>
+      <NextActivities Index="3">
+        <ActivityID>58</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities>
+        <ActivityID>62</ActivityID>
+      </AlternateNextActivities>
+      <IncomingLines>
+        <GraphEdgeID>42</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines Index="0">
+        <GraphEdgeID>44</GraphEdgeID>
+      </OutgoingLines>
+      <OutgoingLines Index="1">
+        <GraphEdgeID>45</GraphEdgeID>
+      </OutgoingLines>
+      <OutgoingLines Index="2">
+        <GraphEdgeID>46</GraphEdgeID>
+      </OutgoingLines>
+      <OutgoingLines Index="3">
+        <GraphEdgeID>47</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines>
+        <GraphEdgeID>48</GraphEdgeID>
+      </AlternateOutgoingLines>
+      <Location>
+        <Left>108.881965637207</Left>
+        <Top>325.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">instance.speedX &lt; 50</Value>
+        <Value Index="1">instance.speedX &lt; 115 &amp;&amp; instance.speedX &gt; 55</Value>
+        <Value Index="2">instance.speedX &lt; 155 &amp;&amp; instance.speedX &gt; 120</Value>
+        <Value Index="3">instance.speedX &lt; 220 &amp;&amp; instance.speedX &gt; 160</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>3</ActivityNameInt>
+      <ActivityID>56</ActivityID>
+      <PreviousActivities>
+        <ActivityID>55</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>60</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>44</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>49</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>525.881965637207</Left>
+        <Top>235.52</Top>
+      </Location>
+      <Values>
+        <Value>1</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>3</ActivityNameInt>
+      <ActivityID>57</ActivityID>
+      <PreviousActivities>
+        <ActivityID>55</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>60</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>45</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>50</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>526.881965637207</Left>
+        <Top>318.52</Top>
+      </Location>
+      <Values>
+        <Value>2</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>3</ActivityNameInt>
+      <ActivityID>58</ActivityID>
+      <PreviousActivities>
+        <ActivityID>55</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>60</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>47</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>51</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>528.881965637207</Left>
+        <Top>483.52</Top>
+      </Location>
+      <Values>
+        <Value>4</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>3</ActivityNameInt>
+      <ActivityID>59</ActivityID>
+      <PreviousActivities>
+        <ActivityID>55</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>60</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>46</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>52</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>527.881965637207</Left>
+        <Top>400.52</Top>
+      </Location>
+      <Values>
+        <Value>3</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>5</ActivityNameInt>
+      <ActivityID>60</ActivityID>
+      <PreviousActivities>
+        <ActivityID>56</ActivityID>
+        <ActivityID>57</ActivityID>
+        <ActivityID>59</ActivityID>
+        <ActivityID>62</ActivityID>
+        <ActivityID>58</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>61</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>49</GraphEdgeID>
+        <GraphEdgeID>50</GraphEdgeID>
+        <GraphEdgeID>52</GraphEdgeID>
+        <GraphEdgeID>53</GraphEdgeID>
+        <GraphEdgeID>51</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>54</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>738.881965637207</Left>
+        <Top>411.52</Top>
+      </Location>
+      <Values />
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>1</ActivityNameInt>
+      <ActivityID>61</ActivityID>
+      <PreviousActivities>
+        <ActivityID>60</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>29</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>54</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>43</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>838.881965637207</Left>
+        <Top>395.52</Top>
+      </Location>
+      <Values>
+        <Value>gear</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>62</ActivityID>
+      <PreviousActivities>
+        <ActivityID>55</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>60</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>48</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>53</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>523.881965637207</Left>
+        <Top>571.52</Top>
+      </Location>
+      <Values>
+        <Value>state.gear</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>11</ActivityNameInt>
+      <ActivityID>108</ActivityID>
+      <PreviousActivities />
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>108.881965637207</Left>
+        <Top>152.52</Top>
+      </Location>
+      <Values>
+        <Value>Changing gear base on speed</Value>
+      </Values>
+    </Activity>
+  </ProgrammingPanel>
+  <ProgrammingPanel Name="Steering">
+    <Variables>
+      <Variable>
+        <VariableName>angle</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+      <Variable>
+        <VariableName>trackPos</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+    </Variables>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>-1</ActivityNameInt>
+      <ActivityID>32</ActivityID>
+      <PreviousActivities />
+      <NextActivities>
+        <ActivityID>63</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines>
+        <GraphEdgeID>55</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>0</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value></Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>-2</ActivityNameInt>
+      <ActivityID>33</ActivityID>
+      <PreviousActivities>
+        <ActivityID>101</ActivityID>
+      </PreviousActivities>
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>109</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>0</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value></Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>-3</ActivityNameInt>
+      <ActivityID>34</ActivityID>
+      <PreviousActivities />
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>0</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value></Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>63</ActivityID>
+      <PreviousActivities>
+        <ActivityID>32</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>94</ActivityID>
+        <ActivityID>95</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>55</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>98</GraphEdgeID>
+        <GraphEdgeID>99</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>141.881965637207</Left>
+        <Top>331.52</Top>
+      </Location>
+      <Values>
+        <Value>(instance.angle * 3.6) - (instance.trackPos * 0.65)</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>1</ActivityNameInt>
+      <ActivityID>94</ActivityID>
+      <PreviousActivities>
+        <ActivityID>63</ActivityID>
+      </PreviousActivities>
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>98</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>676.881965637207</Left>
+        <Top>209.52</Top>
+      </Location>
+      <Values>
+        <Value>steer</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>95</ActivityID>
+      <PreviousActivities>
+        <ActivityID>63</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>96</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>99</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>101</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>562.881965637207</Left>
+        <Top>431.52</Top>
+      </Location>
+      <Values>
+        <Value>(state.steer * 0.6) + (0.4 * value)</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>6</ActivityNameInt>
+      <ActivityID>96</ActivityID>
+      <PreviousActivities>
+        <ActivityID>95</ActivityID>
+      </PreviousActivities>
+      <NextActivities Index="0">
+        <ActivityID>97</ActivityID>
+      </NextActivities>
+      <NextActivities Index="1">
+        <ActivityID>98</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities>
+        <ActivityID>100</ActivityID>
+      </AlternateNextActivities>
+      <IncomingLines>
+        <GraphEdgeID>101</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines Index="0">
+        <GraphEdgeID>102</GraphEdgeID>
+      </OutgoingLines>
+      <OutgoingLines Index="1">
+        <GraphEdgeID>103</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines>
+        <GraphEdgeID>105</GraphEdgeID>
+      </AlternateOutgoingLines>
+      <Location>
+        <Left>806.881965637207</Left>
+        <Top>323.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">value &gt; 1</Value>
+        <Value Index="1">value &lt; -1</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>3</ActivityNameInt>
+      <ActivityID>97</ActivityID>
+      <PreviousActivities>
+        <ActivityID>96</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>101</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>102</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>106</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>960.881965637207</Left>
+        <Top>205.52</Top>
+      </Location>
+      <Values>
+        <Value>1.0</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>3</ActivityNameInt>
+      <ActivityID>98</ActivityID>
+      <PreviousActivities>
+        <ActivityID>96</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>101</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>103</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>107</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>961.881965637207</Left>
+        <Top>298.52</Top>
+      </Location>
+      <Values>
+        <Value>-1.0</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>100</ActivityID>
+      <PreviousActivities>
+        <ActivityID>96</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>101</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>105</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>108</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>960.881965637207</Left>
+        <Top>395.52</Top>
+      </Location>
+      <Values>
+        <Value>value</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>5</ActivityNameInt>
+      <ActivityID>101</ActivityID>
+      <PreviousActivities>
+        <ActivityID>97</ActivityID>
+        <ActivityID>98</ActivityID>
+        <ActivityID>100</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>33</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>106</GraphEdgeID>
+        <GraphEdgeID>107</GraphEdgeID>
+        <GraphEdgeID>108</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>109</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>1176.88196563721</Left>
+        <Top>295.52</Top>
+      </Location>
+      <Values />
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>11</ActivityNameInt>
+      <ActivityID>106</ActivityID>
+      <PreviousActivities />
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>98.881965637207</Left>
+        <Top>192.52</Top>
+      </Location>
+      <Values>
+        <Value>Using the pre-steer and current angle and trackPos to determine the next steer</Value>
+      </Values>
+    </Activity>
+  </ProgrammingPanel>
+  <ProgrammingPanel Name="Brake">
+    <Variables>
+      <Variable>
+        <VariableName>angle</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+      <Variable>
+        <VariableName>trackPos</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+      <Variable>
+        <VariableName>speedX</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+    </Variables>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>-1</ActivityNameInt>
+      <ActivityID>36</ActivityID>
+      <PreviousActivities />
+      <NextActivities>
+        <ActivityID>64</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines>
+        <GraphEdgeID>57</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>0</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value></Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>-2</ActivityNameInt>
+      <ActivityID>37</ActivityID>
+      <PreviousActivities>
+        <ActivityID>68</ActivityID>
+      </PreviousActivities>
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>58</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>0</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value></Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>-3</ActivityNameInt>
+      <ActivityID>38</ActivityID>
+      <PreviousActivities />
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>0</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value></Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>6</ActivityNameInt>
+      <ActivityID>64</ActivityID>
+      <PreviousActivities>
+        <ActivityID>36</ActivityID>
+      </PreviousActivities>
+      <NextActivities Index="0">
+        <ActivityID>65</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities>
+        <ActivityID>66</ActivityID>
+      </AlternateNextActivities>
+      <IncomingLines>
+        <GraphEdgeID>57</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines Index="0">
+        <GraphEdgeID>59</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines>
+        <GraphEdgeID>60</GraphEdgeID>
+      </AlternateOutgoingLines>
+      <Location>
+        <Left>106.881965637207</Left>
+        <Top>183.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">(instance.angle * 12) - (instance.trackPos * 0.25) &gt; 0.125</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>65</ActivityID>
+      <PreviousActivities>
+        <ActivityID>64</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>67</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>59</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>61</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>489.881965637207</Left>
+        <Top>247.52</Top>
+      </Location>
+      <Values>
+        <Value>( instance.speedX - 110 ) / 99</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>3</ActivityNameInt>
+      <ActivityID>66</ActivityID>
+      <PreviousActivities>
+        <ActivityID>64</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>68</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>60</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>62</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>381.881965637207</Left>
+        <Top>361.52</Top>
+      </Location>
+      <Values>
+        <Value>0.0</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>67</ActivityID>
+      <PreviousActivities>
+        <ActivityID>65</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>68</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>61</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>63</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>737.881965637207</Left>
+        <Top>191.52</Top>
+      </Location>
+      <Values>
+        <Value>value * 1.5</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>5</ActivityNameInt>
+      <ActivityID>68</ActivityID>
+      <PreviousActivities>
+        <ActivityID>67</ActivityID>
+        <ActivityID>66</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>37</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>63</GraphEdgeID>
+        <GraphEdgeID>62</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>58</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>937.881965637207</Left>
+        <Top>249.52</Top>
+      </Location>
+      <Values />
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>11</ActivityNameInt>
+      <ActivityID>107</ActivityID>
+      <PreviousActivities />
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>198.881965637207</Left>
+        <Top>64.52</Top>
+      </Location>
+      <Values>
+        <Value>The first place to decide whether to slow down</Value>
+      </Values>
+    </Activity>
+  </ProgrammingPanel>
+  <ProgrammingPanel Name="Accel">
+    <Variables>
+      <Variable>
+        <VariableName>curLapTime</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+      <Variable>
+        <VariableName>steering</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+      <Variable>
+        <VariableName>track9</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+      <Variable>
+        <VariableName>brake</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+    </Variables>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>-1</ActivityNameInt>
+      <ActivityID>40</ActivityID>
+      <PreviousActivities />
+      <NextActivities>
+        <ActivityID>69</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines>
+        <GraphEdgeID>64</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>0</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value></Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>-2</ActivityNameInt>
+      <ActivityID>41</ActivityID>
+      <PreviousActivities>
+        <ActivityID>71</ActivityID>
+      </PreviousActivities>
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>65</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>0</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value></Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>-3</ActivityNameInt>
+      <ActivityID>42</ActivityID>
+      <PreviousActivities />
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>0</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value></Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>6</ActivityNameInt>
+      <ActivityID>69</ActivityID>
+      <PreviousActivities>
+        <ActivityID>40</ActivityID>
+      </PreviousActivities>
+      <NextActivities Index="0">
+        <ActivityID>70</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities>
+        <ActivityID>72</ActivityID>
+      </AlternateNextActivities>
+      <IncomingLines>
+        <GraphEdgeID>64</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines Index="0">
+        <GraphEdgeID>66</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines>
+        <GraphEdgeID>67</GraphEdgeID>
+      </AlternateOutgoingLines>
+      <Location>
+        <Left>172.881965637207</Left>
+        <Top>230.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">instance.curLapTime &lt; 12</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>3</ActivityNameInt>
+      <ActivityID>70</ActivityID>
+      <PreviousActivities>
+        <ActivityID>69</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>71</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>66</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>68</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>415.881965637207</Left>
+        <Top>235.52</Top>
+      </Location>
+      <Values>
+        <Value>1.0</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>5</ActivityNameInt>
+      <ActivityID>71</ActivityID>
+      <PreviousActivities>
+        <ActivityID>70</ActivityID>
+        <ActivityID>73</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>41</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>68</GraphEdgeID>
+        <GraphEdgeID>69</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>65</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>769.881965637207</Left>
+        <Top>285.52</Top>
+      </Location>
+      <Values />
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>72</ActivityID>
+      <PreviousActivities>
+        <ActivityID>69</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>73</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>67</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>70</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>174.881965637207</Left>
+        <Top>385.52</Top>
+      </Location>
+      <Values>
+        <Value>2.3 * (1 - (instance.steering)) * (instance.track9 / 150)</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>73</ActivityID>
+      <PreviousActivities>
+        <ActivityID>72</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>71</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>70</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>69</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>542.881965637207</Left>
+        <Top>384.52</Top>
+      </Location>
+      <Values>
+        <Value>value-instance.brake</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>11</ActivityNameInt>
+      <ActivityID>109</ActivityID>
+      <PreviousActivities />
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>176.881965637207</Left>
+        <Top>110.52</Top>
+      </Location>
+      <Values>
+        <Value>Initial full rate, and then base on the sensor ahead and the steering to decide the accel</Value>
+      </Values>
+    </Activity>
+  </ProgrammingPanel>
+  <ProgrammingPanel Name="ABS">
+    <Variables>
+      <Variable>
+        <VariableName>speedX</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+      <Variable>
+        <VariableName>ABS_MinSpeed</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+      <Variable>
+        <VariableName>brake</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+      <Variable>
+        <VariableName>wheelVel1</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+      <Variable>
+        <VariableName>wheelVel2</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+      <Variable>
+        <VariableName>wheelVel3</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+      <Variable>
+        <VariableName>wheelVel4</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+    </Variables>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>-1</ActivityNameInt>
+      <ActivityID>44</ActivityID>
+      <PreviousActivities />
+      <NextActivities>
+        <ActivityID>75</ActivityID>
+        <ActivityID>79</ActivityID>
+        <ActivityID>81</ActivityID>
+        <ActivityID>80</ActivityID>
+        <ActivityID>83</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines>
+        <GraphEdgeID>71</GraphEdgeID>
+        <GraphEdgeID>72</GraphEdgeID>
+        <GraphEdgeID>73</GraphEdgeID>
+        <GraphEdgeID>74</GraphEdgeID>
+        <GraphEdgeID>75</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>0</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value></Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>-2</ActivityNameInt>
+      <ActivityID>45</ActivityID>
+      <PreviousActivities>
+        <ActivityID>77</ActivityID>
+      </PreviousActivities>
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>76</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>0</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value></Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>-3</ActivityNameInt>
+      <ActivityID>46</ActivityID>
+      <PreviousActivities />
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>0</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value></Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>1</ActivityNameInt>
+      <ActivityID>74</ActivityID>
+      <PreviousActivities>
+        <ActivityID>85</ActivityID>
+      </PreviousActivities>
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>77</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>915.881965637207</Left>
+        <Top>471.52</Top>
+      </Location>
+      <Values>
+        <Value>Slip</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>6</ActivityNameInt>
+      <ActivityID>75</ActivityID>
+      <PreviousActivities>
+        <ActivityID>44</ActivityID>
+      </PreviousActivities>
+      <NextActivities Index="0">
+        <ActivityID>76</ActivityID>
+      </NextActivities>
+      <NextActivities Index="1">
+        <ActivityID>78</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>71</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines Index="0">
+        <GraphEdgeID>78</GraphEdgeID>
+      </OutgoingLines>
+      <OutgoingLines Index="1">
+        <GraphEdgeID>79</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>80.881965637207</Left>
+        <Top>211.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">instance.speedX &lt; state.ABS_MinSpeed</Value>
+        <Value Index="1">state.Slip &lt; state.ABS_Slip</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>76</ActivityID>
+      <PreviousActivities>
+        <ActivityID>75</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>77</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>78</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>80</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>456.881965637207</Left>
+        <Top>202.52</Top>
+      </Location>
+      <Values>
+        <Value>instance.brake</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>5</ActivityNameInt>
+      <ActivityID>77</ActivityID>
+      <PreviousActivities>
+        <ActivityID>76</ActivityID>
+        <ActivityID>78</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>45</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>80</GraphEdgeID>
+        <GraphEdgeID>81</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>76</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>669.881965637207</Left>
+        <Top>249.52</Top>
+      </Location>
+      <Values />
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>78</ActivityID>
+      <PreviousActivities>
+        <ActivityID>75</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>77</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>79</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>81</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>419.881965637207</Left>
+        <Top>295.52</Top>
+      </Location>
+      <Values>
+        <Value>state.Slip * instance.brake</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>79</ActivityID>
+      <PreviousActivities>
+        <ActivityID>44</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>82</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>72</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>82</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>70.881965637207</Left>
+        <Top>399.52</Top>
+      </Location>
+      <Values>
+        <Value>instance.wheelVel1 * state.FWRad / instance.speedX</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>80</ActivityID>
+      <PreviousActivities>
+        <ActivityID>44</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>82</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>74</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>83</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>71.881965637207</Left>
+        <Top>571.52</Top>
+      </Location>
+      <Values>
+        <Value>instance.wheelVel3 * state.FWRad / instance.speedX</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>81</ActivityID>
+      <PreviousActivities>
+        <ActivityID>44</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>82</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>73</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>84</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>70.881965637207</Left>
+        <Top>487.52</Top>
+      </Location>
+      <Values>
+        <Value>instance.wheelVel2 * state.FWRad / instance.speedX</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>4</ActivityNameInt>
+      <ActivityID>82</ActivityID>
+      <PreviousActivities Index="0">
+        <ActivityID>79</ActivityID>
+      </PreviousActivities>
+      <PreviousActivities Index="1">
+        <ActivityID>81</ActivityID>
+      </PreviousActivities>
+      <PreviousActivities Index="2">
+        <ActivityID>80</ActivityID>
+      </PreviousActivities>
+      <PreviousActivities Index="3">
+        <ActivityID>83</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>84</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines Index="0">
+        <GraphEdgeID>82</GraphEdgeID>
+      </IncomingLines>
+      <IncomingLines Index="1">
+        <GraphEdgeID>84</GraphEdgeID>
+      </IncomingLines>
+      <IncomingLines Index="2">
+        <GraphEdgeID>83</GraphEdgeID>
+      </IncomingLines>
+      <IncomingLines Index="3">
+        <GraphEdgeID>85</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>86</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>450.881965637207</Left>
+        <Top>425.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">w1</Value>
+        <Value Index="1">w2</Value>
+        <Value Index="2">w3</Value>
+        <Value Index="3">w4</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>83</ActivityID>
+      <PreviousActivities>
+        <ActivityID>44</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>82</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>75</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>85</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>72.881965637207</Left>
+        <Top>651.52</Top>
+      </Location>
+      <Values>
+        <Value>instance.wheelVel4 * state.FWRad / instance.speedX</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>84</ActivityID>
+      <PreviousActivities>
+        <ActivityID>82</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>85</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>86</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>87</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>609.881965637207</Left>
+        <Top>470.52</Top>
+      </Location>
+      <Values>
+        <Value>w1+w2+w3+w4</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>85</ActivityID>
+      <PreviousActivities>
+        <ActivityID>84</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>74</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>87</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>77</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>766.881965637207</Left>
+        <Top>470.52</Top>
+      </Location>
+      <Values>
+        <Value>value / 4</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>11</ActivityNameInt>
+      <ActivityID>110</ActivityID>
+      <PreviousActivities />
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>84.881965637207</Left>
+        <Top>92.52</Top>
+      </Location>
+      <Values>
+        <Value>Use the wheels' speed and the radius to get the average slip and turn the brake</Value>
+      </Values>
+    </Activity>
+  </ProgrammingPanel>
+  <ProgrammingPanel Name="TC">
+    <Variables>
+      <Variable>
+        <VariableName>speedX</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+      <Variable>
+        <VariableName>accel</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+      <Variable>
+        <VariableName>wheelSpin2</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+      <Variable>
+        <VariableName>wheelSpin3</VariableName>
+        <VariableType>System.Double</VariableType>
+      </Variable>
+    </Variables>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>-1</ActivityNameInt>
+      <ActivityID>48</ActivityID>
+      <PreviousActivities />
+      <NextActivities>
+        <ActivityID>92</ActivityID>
+        <ActivityID>86</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines>
+        <GraphEdgeID>88</GraphEdgeID>
+        <GraphEdgeID>89</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>0</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value></Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>-2</ActivityNameInt>
+      <ActivityID>49</ActivityID>
+      <PreviousActivities>
+        <ActivityID>91</ActivityID>
+      </PreviousActivities>
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>90</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>0</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value></Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>-3</ActivityNameInt>
+      <ActivityID>50</ActivityID>
+      <PreviousActivities />
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>0</Left>
+        <Top>0</Top>
+      </Location>
+      <Values>
+        <Value></Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>6</ActivityNameInt>
+      <ActivityID>86</ActivityID>
+      <PreviousActivities>
+        <ActivityID>48</ActivityID>
+      </PreviousActivities>
+      <NextActivities Index="0">
+        <ActivityID>88</ActivityID>
+      </NextActivities>
+      <NextActivities Index="1">
+        <ActivityID>89</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities>
+        <ActivityID>90</ActivityID>
+      </AlternateNextActivities>
+      <IncomingLines>
+        <GraphEdgeID>89</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines Index="0">
+        <GraphEdgeID>91</GraphEdgeID>
+      </OutgoingLines>
+      <OutgoingLines Index="1">
+        <GraphEdgeID>92</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines>
+        <GraphEdgeID>93</GraphEdgeID>
+      </AlternateOutgoingLines>
+      <Location>
+        <Left>75.881965637207</Left>
+        <Top>310.52</Top>
+      </Location>
+      <Values>
+        <Value Index="0">instance.speedX &lt; state.TLC_MinSpeed</Value>
+        <Value Index="1">state.TC_Slip &lt; state.TLC_Slip</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>1</ActivityNameInt>
+      <ActivityID>87</ActivityID>
+      <PreviousActivities>
+        <ActivityID>92</ActivityID>
+      </PreviousActivities>
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>94</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>567.881965637207</Left>
+        <Top>548.52</Top>
+      </Location>
+      <Values>
+        <Value>TC_Slip</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>88</ActivityID>
+      <PreviousActivities>
+        <ActivityID>86</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>91</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>91</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>95</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>433.881965637207</Left>
+        <Top>244.52</Top>
+      </Location>
+      <Values>
+        <Value>instance.accel</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>89</ActivityID>
+      <PreviousActivities>
+        <ActivityID>86</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>91</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>92</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>96</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>427.881965637207</Left>
+        <Top>340.52</Top>
+      </Location>
+      <Values>
+        <Value>instance.accel * 0.1</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>90</ActivityID>
+      <PreviousActivities>
+        <ActivityID>86</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>91</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>93</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>97</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>437.881965637207</Left>
+        <Top>432.52</Top>
+      </Location>
+      <Values>
+        <Value>instance.accel</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>5</ActivityNameInt>
+      <ActivityID>91</ActivityID>
+      <PreviousActivities>
+        <ActivityID>88</ActivityID>
+        <ActivityID>89</ActivityID>
+        <ActivityID>90</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>49</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>95</GraphEdgeID>
+        <GraphEdgeID>96</GraphEdgeID>
+        <GraphEdgeID>97</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>90</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>640.881965637207</Left>
+        <Top>341.52</Top>
+      </Location>
+      <Values />
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>2</ActivityNameInt>
+      <ActivityID>92</ActivityID>
+      <PreviousActivities>
+        <ActivityID>48</ActivityID>
+      </PreviousActivities>
+      <NextActivities>
+        <ActivityID>87</ActivityID>
+      </NextActivities>
+      <AlternateNextActivities />
+      <IncomingLines>
+        <GraphEdgeID>88</GraphEdgeID>
+      </IncomingLines>
+      <OutgoingLines>
+        <GraphEdgeID>94</GraphEdgeID>
+      </OutgoingLines>
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>104.881965637207</Left>
+        <Top>547.52</Top>
+      </Location>
+      <Values>
+        <Value>((instance.wheelSpin2 + instance.wheelSpin3) * state.RWRad) / 2.0</Value>
+      </Values>
+    </Activity>
+    <Activity IsFlipped="false">
+      <ActivityNameInt>11</ActivityNameInt>
+      <ActivityID>111</ActivityID>
+      <PreviousActivities />
+      <NextActivities />
+      <AlternateNextActivities />
+      <IncomingLines />
+      <OutgoingLines />
+      <AlternateOutgoingLines />
+      <Location>
+        <Left>74.881965637207</Left>
+        <Top>132.52</Top>
+      </Location>
+      <Values>
+        <Value>base on the wheel's spinning to get the proper speed for accel</Value>
+      </Values>
+    </Activity>
+  </ProgrammingPanel>
+  <Variables>
+    <Variable>
+      <VariableName>status</VariableName>
+      <VariableType>System.String</VariableType>
+    </Variable>
+    <Variable>
+      <VariableName>Sensor</VariableName>
+      <VariableType>System.Int32</VariableType>
+    </Variable>
+    <Variable>
+      <VariableName>distRaced</VariableName>
+      <VariableType>System.Double</VariableType>
+    </Variable>
+    <Variable>
+      <VariableName>count</VariableName>
+      <VariableType>System.Int32</VariableType>
+    </Variable>
+    <Variable>
+      <VariableName>FWRad</VariableName>
+      <VariableType>System.Double</VariableType>
+    </Variable>
+    <Variable>
+      <VariableName>RWRad</VariableName>
+      <VariableType>System.Double</VariableType>
+    </Variable>
+    <Variable>
+      <VariableName>ABS_MinSpeed</VariableName>
+      <VariableType>System.Double</VariableType>
+    </Variable>
+    <Variable>
+      <VariableName>ABS_Slip</VariableName>
+      <VariableType>System.Double</VariableType>
+    </Variable>
+    <Variable>
+      <VariableName>gear</VariableName>
+      <VariableType>System.Int32</VariableType>
+    </Variable>
+    <Variable>
+      <VariableName>clutchtime</VariableName>
+      <VariableType>System.Boolean</VariableType>
+    </Variable>
+    <Variable>
+      <VariableName>TLC_Slip</VariableName>
+      <VariableType>System.Double</VariableType>
+    </Variable>
+    <Variable>
+      <VariableName>TLC_MinSpeed</VariableName>
+      <VariableType>System.Double</VariableType>
+    </Variable>
+    <Variable>
+      <VariableName>Slip</VariableName>
+      <VariableType>System.Double</VariableType>
+    </Variable>
+    <Variable>
+      <VariableName>TC_Slip</VariableName>
+      <VariableType>System.Double</VariableType>
+    </Variable>
+    <Variable>
+      <VariableName>steer</VariableName>
+      <VariableType>System.Double</VariableType>
+    </Variable>
+  </Variables>
+  <UsedCustomActivityNames>
+    <CustomActivityName>Shifter</CustomActivityName>
+    <CustomActivityName>Steering</CustomActivityName>
+    <CustomActivityName>Brake</CustomActivityName>
+    <CustomActivityName>Accel</CustomActivityName>
+    <CustomActivityName>ABS</CustomActivityName>
+    <CustomActivityName>TC</CustomActivityName>
+  </UsedCustomActivityNames>
+</Program>
