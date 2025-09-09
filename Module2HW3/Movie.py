@@ -36,7 +36,7 @@ def read_movies(filename):
             content = file.read().strip()
     else:
         try:
-            github_url = "https://raw.githubusercontent.com/poyuli-ASU/FSE598/main/Module2HW3/Movie.txt"
+            github_url = "https://raw.githubusercontent.com/poyuli-ASU/FSE598/main/Module2HW3/Movies.txt"
             print(f"Trying to access: {github_url}")
             with urllib.request.urlopen(github_url) as response:
                 content = response.read().decode('utf-8').strip()
