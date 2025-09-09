@@ -30,13 +30,13 @@ def read_movies(filename):
     # Get the directory where this script is located
     script_dir = os.path.dirname(os.path.abspath(__file__))
     file_path = os.path.join(script_dir, filename)
-    
+    # Check if the file exists locally; if not, fetch from GitHub
     if os.path.exists(file_path):
         with open(file_path, 'r', encoding='utf-8') as file:
             content = file.read().strip()
     else:
         try:
-            github_url = "https://raw.githubusercontent.com/poyuli-ASU/FSE598/main/Module2HW3/Movies.txt"
+            github_url = "https://raw.githubusercontent.com/poyuli-ASU/FSE598/main/Module2HW3/Movie.txt"
             print(f"Trying to access: {github_url}")
             with urllib.request.urlopen(github_url) as response:
                 content = response.read().decode('utf-8').strip()
