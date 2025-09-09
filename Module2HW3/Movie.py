@@ -27,14 +27,25 @@ class Movie:
 # Read the file and create Movie objects, and return a list of Movie objects
 def read_movies(filename):
     movies = []
-    # Check whether the file exists in the current directory, or read the file in the GitHub repository 
-    if os.path.exists(filename):
-        with open(filename, 'r', encoding='utf-8') as file:
+    # Get the directory where this script is located
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(script_dir, filename)
+    
+    if os.path.exists(file_path):
+        with open(file_path, 'r', encoding='utf-8') as file:
             content = file.read().strip()
-    else:  # Read from GitHub if local file not found
-        github_url = "https://raw.githubusercontent.com/poyuli-ASU/FSE598/main/Module2HW3/Movies.txt"
-        with urllib.request.urlopen(github_url) as response:
-            content = response.read().decode('utf-8').strip()
+    else:
+        try:
+            github_url = "https://raw.githubusercontent.com/poyuli-ASU/FSE598/main/Module2HW3/Movies.txt"
+            print(f"Trying to access: {github_url}")
+            with urllib.request.urlopen(github_url) as response:
+                content = response.read().decode('utf-8').strip()
+        except urllib.error.HTTPError as e:
+            print(f"HTTP Error {e.code}: {e.reason} - GitHub repository or file may not exist")
+            return []
+        except Exception as e:
+            print(f"Error accessing GitHub: {e}")
+            return []
 
     movie_sperated = content.split('\n\n')                          # Split the content into different movies string     
 
