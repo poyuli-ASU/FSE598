@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Movies>
+  <Movie>
+    <Title>Past Lives</Title>
+    <Genre>Romance</Genre>
+    <Director>
+      <Name>Celine Song</Name>
+    </Director>
+    <Studio>A24</Studio>
+    <Year>2023</Year>
+  </Movie>
+  <Movie>
+    <Title>Oppenheimer</Title>
+    <Genre>Biography</Genre>
+    <Director>
+      <Name>Christopher Nolan</Name>
+    </Director>
+    <Studio>Universal Pictures</Studio>
+    <Year>2023</Year>
+  </Movie>
+  <Movie>
+    <Title>Babylon</Title>
+    <Genre>Drama</Genre>
+    <Director>
+      <Name>Damien Chazelle</Name>
+    </Director>
+    <Studio>Paramount Pictures</Studio>
+    <Year>2022</Year>
+  </Movie>
+  <Movie>
+    <Title>Dune: Part Two</Title>
+    <Genre>Science Fiction</Genre>
+    <Director>
+      <Name>Denis Villeneuve</Name>
+    </Director>
+    <Studio>Legendary Pictures</Studio>
+    <Year>2024</Year>
+  </Movie>
+  <Movie>
+    <Title>Barbie</Title>
+    <Genre>Comedy</Genre>
+    <Director>
+      <Name>Greta Gerwig</Name>
+    </Director>
+    <Studio>Warner Bros. Pictures</Studio>
+    <Year>2023</Year>
+  </Movie>
+  <Movie>
+    <Title>Old Fox</Title>
+    <Genre>Drama</Genre>
+    <Director>
+      <Name>Hsiao Ya-chuan</Name>
+    </Director>
+    <Studio>BIT Production Co., Ltd.</Studio>
+    <Year>2023</Year>
+  </Movie>
+  <Movie>
+    <Title>Spider-Man: Across the Spider-Verse</Title>
+    <Genre>Superhero</Genre>
+    <Director>
+      <Name>Joaquim Dos Santos</Name>
+    </Director>
+    <Director>
+      <Name>Kemp Powers</Name>
+    </Director>
+    <Director>
+      <Name>Justin K. Thompson</Name>
+    </Director>
+    <Studio>Sony Pictures Animation</Studio>
+    <Year>2023</Year>
+  </Movie>
+  <Movie>
+    <Title>Inside Out 2</Title>
+    <Genre>Animation</Genre>
+    <Director>
+      <Name>Kelsey Mann</Name>
+    </Director>
+    <Studio>Pixar Animation Studios</Studio>
+    <Year>2024</Year>
+  </Movie>
+  <Movie>
+    <Title>Suzume</Title>
+    <Genre>Adventure</Genre>
+    <Director>
+      <Name>Makoto Shinkai</Name>
+    </Director>
+    <Studio>CoMix Wave Films</Studio>
+    <Year>2022</Year>
+  </Movie>
+  <Movie>
+    <Title>The Pig, The Snake and The Pigeon</Title>
+    <Genre>Crime</Genre>
+    <Director>
+      <Name>Wong Ching-po</Name>
+    </Director>
+    <Studio>Warner Bros.</Studio>
+    <Year>2023</Year>
+  </Movie>
+  <Movie>
+    <Title>Poor Things</Title>
+    <Genre>Fantasy</Genre>
+    <Director>
+      <Name>Yorgos Lanthimos</Name>
+    </Director>
+    <Studio>Searchlight Pictures</Studio>
+    <Year>2023</Year>
+  </Movie>
+  <Movie>
+    <Title>Blue Giant</Title>
+    <Genre>Music</Genre>
+    <Director>
+      <Name>Yuzuru Tachikawa</Name>
+    </Director>
+    <Studio>NUT</Studio>
+    <Year>2023</Year>
+  </Movie>
+</Movies>

@@ -1,0 +1,264 @@
+[
+  {
+    "Movie": [
+      {
+        "Title": "Poor Things"
+      },
+      {
+        "Genre": "Fantasy"
+      },
+      {
+        "Director": {
+          "Name": "Yorgos Lanthimos"
+        }
+      },
+      {
+        "Studio": "Searchlight Pictures"
+      },
+      {
+        "Year": 2023
+      }
+    ]
+  },
+  {
+    "Movie": [
+      {
+        "Title": "Inside Out 2"
+      },
+      {
+        "Genre": "Animation"
+      },
+      {
+        "Director": {
+          "Name": "Kelsey Mann"
+        }
+      },
+      {
+        "Studio": "Pixar Animation Studios"
+      },
+      {
+        "Year": 2024
+      }
+    ]
+  },
+  {
+    "Movie": [
+      {
+        "Title": "Oppenheimer"
+      },
+      {
+        "Genre": "Biography"
+      },
+      {
+        "Director": {
+          "Name": "Christopher Nolan"
+        }
+      },
+      {
+        "Studio": "Universal Pictures"
+      },
+      {
+        "Year": 2023
+      }
+    ]
+  },
+  {
+    "Movie": [
+      {
+        "Title": "Barbie"
+      },
+      {
+        "Genre": "Comedy"
+      },
+      {
+        "Director": {
+          "Name": "Greta Gerwig"
+        }
+      },
+      {
+        "Studio": "Warner Bros. Pictures"
+      },
+      {
+        "Year": 2023
+      }
+    ]
+  },
+  {
+    "Movie": [
+      {
+        "Title": "The Pig, The Snake and The Pigeon"
+      },
+      {
+        "Genre": "Crime"
+      },
+      {
+        "Director": {
+          "Name": "Wong Ching-po"
+        }
+      },
+      {
+        "Studio": "Warner Bros."
+      },
+      {
+        "Year": 2023
+      }
+    ]
+  },
+  {
+    "Movie": [
+      {
+        "Title": "Past Lives"
+      },
+      {
+        "Genre": "Romance"
+      },
+      {
+        "Director": {
+          "Name": "Celine Song"
+        }
+      },
+      {
+        "Studio": "A24"
+      },
+      {
+        "Year": 2023
+      }
+    ]
+  },
+  {
+    "Movie": [
+      {
+        "Title": "Spider-Man: Across the Spider-Verse"
+      },
+      {
+        "Genre": "Superhero"
+      },
+      {
+        "Director": {
+          "Name": "Joaquim Dos Santos"
+        }
+      },
+      {
+        "Director": {
+          "Name": "Kemp Powers"
+        }
+      },
+      {
+        "Director": {
+          "Name": "Justin K. Thompson"
+        }
+      },
+      {
+        "Studio": "Sony Pictures Animation"
+      },
+      {
+        "Year": 2023
+      }
+    ]
+  },
+  {
+    "Movie": [
+      {
+        "Title": "Suzume"
+      },
+      {
+        "Genre": "Adventure"
+      },
+      {
+        "Director": {
+          "Name": "Makoto Shinkai"
+        }
+      },
+      {
+        "Studio": "CoMix Wave Films"
+      },
+      {
+        "Year": 2022
+      }
+    ]
+  },
+  {
+    "Movie": [
+      {
+        "Title": "Babylon"
+      },
+      {
+        "Genre": "Drama"
+      },
+      {
+        "Director": {
+          "Name": "Damien Chazelle"
+        }
+      },
+      {
+        "Studio": "Paramount Pictures"
+      },
+      {
+        "Year": 2022
+      }
+    ]
+  },
+  {
+    "Movie": [
+      {
+        "Title": "Blue Giant"
+      },
+      {
+        "Genre": "Music"
+      },
+      {
+        "Director": {
+          "Name": "Yuzuru Tachikawa"
+        }
+      },
+      {
+        "Studio": "NUT"
+      },
+      {
+        "Year": 2023
+      }
+    ]
+  },
+  {
+    "Movie": [
+      {
+        "Title": "Old Fox"
+      },
+      {
+        "Genre": "Drama"
+      },
+      {
+        "Director": {
+          "Name": "Hsiao Ya-chuan"
+        }
+      },
+      {
+        "Studio": "BIT Production Co., Ltd."
+      },
+      {
+        "Year": 2023
+      }
+    ]
+  },
+  {
+    "Movie": [
+      {
+        "Title": "Dune: Part Two"
+      },
+      {
+        "Genre": "Science Fiction"
+      },
+      {
+        "Director": {
+          "Name": "Denis Villeneuve"
+        }
+      },
+      {
+        "Studio": "Legendary Pictures"
+      },
+      {
+        "Year": 2024
+      }
+    ]
+  }
+]
